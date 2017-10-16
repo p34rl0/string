@@ -19,9 +19,10 @@ int main()
 	TString s5 = fabryka("moja fabryka");
 	s4=move(s5);
 	s4=fabryka("ostatni obiekt");
-	s4[0]='A';
-	cout <<s5[0];
 
-	
+  	for(auto c : s4)cout<<c<< "-";
+  	for(auto& c : s4)c = toupper(c);
+    cout<<endl<<"___________________"<<endl;
+    cout<<endl<<"___________________"<<endl;
 
 }
