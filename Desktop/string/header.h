@@ -16,6 +16,8 @@ class TString {
 		~TString(); // destruktor
 		TString& operator=(const TString& s); //operator kopiujacy 
 		TString& operator=(TString&& s);
+		char& operator[]( size_t n);
+	    const char& operator[](size_t n)const;
 
 };
 
