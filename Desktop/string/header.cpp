@@ -89,13 +89,13 @@ TString& TString::operator=(TString&& s)
 
 char& TString::operator[](size_t n)
 {
-if( ptr==nullptr ) throw invalid_argument("pusty obiekt");
-if( n>=0 && n<len) return ptr[n];
-throw out_of_range("indeks spoza zakresu");
+	if( ptr==nullptr ) throw invalid_argument("pusty obiekt");
+    if( n>=0 && n<len) return ptr[n];
+	throw out_of_range("indeks spoza zakresu");
 }
 
 const char& TString::operator[](size_t n) const {
-if( ptr==nullptr ) throw invalid_argument("pusty obiekt");
-if( n>=0 && n<len) return ptr[n];
-throw out_of_range("indeks spoza zakresu");
+	if( ptr==nullptr ) throw invalid_argument("pusty obiekt");
+	if( n>=0 && n<len) return ptr[n];
+	throw out_of_range("indeks spoza zakresu");
 }

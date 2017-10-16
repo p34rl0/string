@@ -1,7 +1,9 @@
 #include <iostream>
 #include "header.h"
+#include "operatory.h"
 
 using namespace std ; 
+using namespace MojeOperatory;
 
 TString fabryka(const char *s)
 {

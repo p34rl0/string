@@ -1,5 +1,6 @@
 #ifndef TST_H
 #define TST_H
+#include "operatory.h"
 #include<cstring>
 
 class TString {
@@ -29,6 +30,7 @@ class TString {
 		const char& front() const {return *ptr;}
 		char& back(){return *(ptr+len-1);}
 		const char& back() const{return*(ptr+len-1);}
+		friend std::ostream& MojeOperatory::operator<<(std::ostream& strumien,const TString& s);
 		 
 
 };
