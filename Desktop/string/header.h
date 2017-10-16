@@ -31,7 +31,7 @@ class TString {
 		char& back(){return *(ptr+len-1);}
 		const char& back() const{return*(ptr+len-1);}
 		friend std::ostream& MojeOperatory::operator<<(std::ostream& strumien,const TString& s);
-		 
+		friend std::istream& MojeOperatory::operator<<(std::istream& strumien,TString& s);
 
 };
 
