@@ -25,7 +25,7 @@ int main()
   	for(auto c : s4)cout<<c<< "-";
   	for(auto& c : s4)c = toupper(c);
     cout<<endl<<"___________________"<<endl;
-    cin>>s4;
+    
     cout<<s4<<endl;
     cout<<endl<<"___________________"<<endl;
 
